@@ -18,7 +18,7 @@ class User(UserMixin, Model):
         order_by = ('-joined_at',) #the minus tells to order in descending order
 
     @classmethod #classmethod describes a method that belongs to a class that can create a class that belongs to
-    def create_user(cls, username, email, password, admin=false): #cls instead of self
+    def create_user(cls, username, email, password, admin = False): #cls instead of self
         try:
             cls.create(
             username = username,
